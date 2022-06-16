@@ -1,4 +1,6 @@
 package model;
+
+// Classe que representa um modelo de jogador, podendo ser um humano ou um computador (O computador não foi implementado).
 public abstract class Jogador {
     
     protected int[] tentativa = new int[2];

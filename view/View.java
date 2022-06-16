@@ -7,6 +7,38 @@ public class View {
 
     }
 
+    public void msgLocalInvalido() {
+
+        System.out.println("Esse local já foi marcado. Tente outro.");
+
+    }
+
+    public void msgLinha() {
+
+        System.out.print("Linha: ");
+
+    }
+
+    public void msgColuna() {
+
+        System.out.print("Coluna: ");
+
+    }
+
+    public void msgJogadaLinha(int tentativa) { 
+
+        if( tentativa > 3 ||tentativa < 1)
+            System.out.println("Linha inválida. É 1, 2 ou 3");
+        
+    }
+
+    public void msgJogadaColuna(int tentativa) { 
+
+        if(tentativa > 3 ||tentativa < 1)
+            System.out.println("Coluna inválida. É 1, 2 ou 3");
+
+    }
+
     public int msgTela(int ganhou, int rodada, int vez, Tabuleiro tabuleiro) {
 
         if(tabuleiro.tabuleiroCompleto()) {
