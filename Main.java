@@ -1,12 +1,10 @@
-import controller.Jogo;
+import core.JogoDaVelha;
 
 public class Main {
 
-    public static void main(String[] args) {
-
-        new Jogo(); 
-
-    }
+    public static void main(String[] args) throws Exception {
+        new JogoDaVelha();
+     }
     
 }
 
